@@ -254,6 +254,7 @@ grid-gap: 24px;
 height: 1497px;
 padding: 0;
 margin: 0;
+
 }
 .grid-card {
 width: 100%;
@@ -276,6 +277,7 @@ overflow: hidden;
 width: 100%;
 border-radius: 16px 16px 0 0;
 padding: 0;
+
 }
 
 .card-image  img {
@@ -284,6 +286,7 @@ height: 100%;
 padding: 0;
 margin: 0;
 object-fit: cover;
+margin-bottom: -4px;
 }
 
 .card-tags {
@@ -429,47 +432,39 @@ display: inline-block;
     width: 384px;
 height: 260px;
    }   
-
- .one img {
-   margin-bottom: -4px;
-    width: 588px!important;
-    height: 260px;
-  object-position:bottom;
-
-}
-
 .two img {
     width: 588px;
     height: 260px; 
 }
-/*.three {
-width: 384px;
-height: 260px;
+
+.one {
+  background-image: url("../Rectangle\ \(14\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 588px;
+  height: 260px;
 }
-.four {
-width: 384px;
-height: 260px;
-}
-.five {
-width: 384px;
-height: 260px;
-}
-.six {
-width: 384px;
-height: 260px;
-}
-.seven {
-width: 384px;
-height: 260px;
-}
-.eight {
-width: 384px;
-height: 260px;
-} */
 
 
-
-
+.more-button {
+  display: block;
+  width: 200px;
+  height: 60px;
+  margin: 40px auto 0;
+  padding: 0;
+  background-color: #4DC4A5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+.more-button:hover {
+  background-color: #3ABE95;
+}
 
 
 
