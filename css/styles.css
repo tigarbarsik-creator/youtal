@@ -438,7 +438,7 @@ height: 260px;
 }
 
 .one {
-  background-image: url("../Rectangle\ \(14\).png");
+  background-image: url("../img/eggs/Rectangle\ \(14\).png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 588px;
@@ -603,6 +603,7 @@ padding-bottom: 8px;
   background-repeat: no-repeat;
   margin: 0 auto; 
 }
+
 
 .submit-btn {
   width: 64px;
