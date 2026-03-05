@@ -593,9 +593,8 @@ padding-bottom: 8px;
   background: rgba(255, 255, 255, 0.15);
 }
 .with-icon::before {
-  display:inline-block;
   content: '';
-  background-image: url('/img/footer_img/Group.png');
+  background-image: url('/img/footer_img/Group.png')!important;
   display: block;
   width: 20px;
   height: 20px;
