@@ -34,36 +34,34 @@ console.log(example);
 console.log(`Сумма переменных a и b равна ${1 + 2}`);
 const name='Василий';
 console.log (`Привет,${name}`);
-const totalSeconds = 43200; // 12 часов в секундах
-
-// Вычисляем количество полных часов
+const totalSeconds = 43200; 
 const hours = Math.floor(totalSeconds / 3600);
 
-// Оставшиеся секунды после вычитания полных часов
+
 const remainingSeconds = totalSeconds % 3600;
 
-// Вычисляем количество полных минут из оставшихся секунд
+
 const minutes = Math.floor(remainingSeconds / 60);
 
-// Секунды — остаток после выделения минут
+
 const seconds = remainingSeconds % 60;
 
-// Функция для добавления ведущего нуля к числам < 10
+
 function addLeadingZero(num) {
   if (num < 10) {
-    return '0' + num; // если число меньше 10, добавляем '0' слева
+    return '0' + num; 
   } else {
-    return num; // если число 10 или больше, возвращаем как есть
+    return num; 
   }
 }
 
-// Форматируем каждую часть времени
+
 const formattedHours = addLeadingZero(hours);
 const formattedMinutes = addLeadingZero(minutes);
 const formattedSeconds = addLeadingZero(seconds);
 
 
-// Формируем итоговую строку и выводим в консоль
+
 console.log(`${formattedHours}:${formattedMinutes}:${formattedSeconds}`);
 
 const kitName = 'Батут';
@@ -88,13 +86,13 @@ document.addEventListener('DOMContentLoaded', function() {
     return;
   }
 
-  // Переключение меню при клике на бургер
+  
   hamburger.addEventListener('click', function() {
     this.classList.toggle('active');
     mobileMenu.classList.toggle('active');
   });
 
-  // Закрытие меню при клике на ссылку
+  
   document.querySelectorAll('.mobile-menu__link').forEach(link => {
     link.addEventListener('click', () => {
       mobileMenu.classList.remove('active');
@@ -102,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Закрытие меню при клике вне его области
+  
   document.addEventListener('click', function(e) {
     if (!mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
       mobileMenu.classList.remove('active');
