@@ -257,15 +257,12 @@
   .sk-logo-container {
     padding-bottom: 40px;
   }
-  .sk-logo {
-  }
-
-  .social-link {
-  }
-
   .footer-bottom {
     margin-top: 354px;
     width: 728px;
+  }
+  .privacy-notice {
+    width: 460px;
   }
 }
 @media (max-width: 414px) {
