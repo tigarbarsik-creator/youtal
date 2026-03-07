@@ -592,32 +592,6 @@ padding-bottom: 8px;
 .email-input:focus {
   background: rgba(255, 255, 255, 0.15);
 }
-.with-icon {
-  position: relative;
-  width: 64px;
-  height: 48px;
-  background-color: #16C8BB;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.with-icon::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url('../img/footer_img/Group.png'); 
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-}
-.with-icon:hover {
-  background-color: #3abcf2;
-}
-
 .submit-btn {
   width: 64px;
   height: 48px;
@@ -626,9 +600,28 @@ padding-bottom: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 .submit-btn:hover {
   background-color: #3abcf2;
-}  
+}
+
+.with-icon {
+  position: relative;
+}
+
+.with-icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('../img/footer_img/Group.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
 .privacy-notice {
   font-family: 'Montserrat_ofont' ;
   font-weight: 400;
