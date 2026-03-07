@@ -618,7 +618,7 @@ padding-bottom: 8px;
   background-color: #3abcf2;
 }
 
-/* .submit-btn {
+.submit-btn {
   width: 64px;
   height: 48px;
   background-color: #16C8BB;
@@ -628,7 +628,7 @@ padding-bottom: 8px;
 }
 .submit-btn:hover {
   background-color: #3abcf2;
-}  */
+}  
 .privacy-notice {
   font-family: 'Montserrat_ofont' ;
   font-weight: 400;

@@ -262,7 +262,7 @@
     width: 728px;
   }
   .privacy-notice {
-    width: 460px!important;
+    width: 460px;
   }
 }
 @media (max-width: 414px) {
