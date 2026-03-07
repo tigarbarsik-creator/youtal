@@ -704,7 +704,89 @@ padding-bottom: 8px;
 
 
 
+/* Анимация бургер-кнопки при открытии */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
 
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Стили мобильного меню */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 76px;
+  left: 0;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  padding: 20px 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mobile-menu.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Стили для списка в мобильном меню */
+.mobile-menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.mobile-menu__item {
+  margin-bottom: 16px;
+}
+
+.mobile-menu__link {
+  text-decoration: none;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: #333;
+  font-size: 18px;
+  display: block;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu__link:hover {
+  color: #4CAF50;
+}
+
+/* Кнопка в мобильном меню */
+.mobile-menu__action {
+  padding: 0 20px 20px;
+  border-top: 1px solid #EFF2F2;
+}
+
+.mobile-menu__action .button {
+  width: 100%;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 980px) {
+  .hamburger {
+    display: flex;
+  }
+  .navigation {
+    display: none;
+  }
+  .header__action-block {
+    display: none;
+  }
+}
 
 
 
