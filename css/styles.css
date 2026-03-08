@@ -179,56 +179,6 @@ margin: 0 auto;
 padding-left: 0 ;
 
 }
-
-/* .with-emoji::before {
-content: "😊";
-margin-right: 5px;
-}
-.filter-container {
-display: flex;
-flex-wrap: wrap;
-gap: 8px;
-line-height: 20px;
-align-items: center;
-margin-top: 32px;
-margin-bottom: 24px;
-}
-
-.filter-item {
-display: inline-flex;
-font-family: "Montserrat-Medium";
-font-weight: 600;
-font-size: 14px;
-background-color: #f9f9f9;
-border: 1px solid #C1C5CD;
-border-radius: 24px;
-padding: 6px 8px;
-align-items: center;
-margin-bottom: 8px;
-box-sizing: border-box;
-will-change: transform, border;
-transition: border 0.2s ease;
-line-height: 20px;
-letter-spacing: 0px;
- border: 2px solid transparent;
- outline: 0;
-}
-
-.filter-item img {
-width: 18px;
-height: 18px;
-object-fit: contain;
-margin-right: 8px;
-transition: none;
-transform: none !important;
-}
-
-.filter-item:hover {
-border: 2px solid #16C8BB;
-transform: none;
-scale: none;
-
-} */
 .filter-container {
   display: flex;
   flex-wrap: wrap;
