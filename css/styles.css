@@ -180,7 +180,7 @@ padding-left: 0 ;
 
 }
 
-.with-emoji::before {
+/* .with-emoji::before {
 content: "😊";
 margin-right: 5px;
 }
@@ -210,6 +210,8 @@ will-change: transform, border;
 transition: border 0.2s ease;
 line-height: 20px;
 letter-spacing: 0px;
+ border: 2px solid transparent;
+ outline: 0;
 }
 
 .filter-item img {
@@ -225,7 +227,72 @@ transform: none !important;
 border: 2px solid #16C8BB;
 transform: none;
 scale: none;
+
+} */
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+  justify-content: flex-start;
 }
+
+.filter-item {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Montserrat-Medium", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  background-color: #f9f9f9;
+  border: 2px solid transparent;
+  border-radius: 24px;
+  padding: 6px 10px; 
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  will-change: transform, border;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  min-width: min-content;
+  flex-shrink: 1; 
+  white-space: nowrap;
+}
+.filter-item.long-text {
+  white-space: normal;
+  text-align: center;
+  padding: 8px 12px;
+}
+.filter-item img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  margin-right: 8px;
+  transition: transform 0.2s ease;
+}
+.filter-item:hover .tag-icon {
+  transform: scale(1.1);
+}
+.with-emoji::before {
+  content: "😊";
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.filter-item:hover {
+  border: 2px solid #16C8BB;
+  background-color: #eef9f8;
+  transform: translateY(-1px);
+}
+.filter-item.active {
+  border: 2px solid #16C8BB;
+  background-color: #eef9f8;
+  color: #16C8BB;
+}
+
+
 
 main {
 max-width: 1200px;
@@ -333,9 +400,6 @@ line-height: 20px;
 Letter-spacing:
 0px;
 }
-
-
-
 .post-date {
 Letter-spacing:0.25px;
 text-align: left;
