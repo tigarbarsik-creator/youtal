@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("./Montserrat-Medium.woff2") format("woff2"),
+       url("./Montserrat-Medium.woff") format("woff"),
+       url("./Montserrat-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Montserrat_ofont' ;
+  src: url(../font/ofont.ru_Montserrat.ttf);
+  font-weight: 600;
+}
