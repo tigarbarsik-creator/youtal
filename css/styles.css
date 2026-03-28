@@ -635,22 +635,6 @@ grid-column: span 2;
   background-color: #3abcf2;
 }
 
-.with-icon {
-  background-image: url(/img2/Group.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 24px 24px;
-  background-color: #16C8BB;
-  border: none;
-  width: 64px;
-  height: 48px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.with-icon:hover {
-  background-color: #3abcf2;
-}
 
 
 
