@@ -635,27 +635,21 @@ grid-column: span 2;
   background-color: #3abcf2;
 }
 
-.with-icon::before {
-  content: '';
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-image: url(/img/footer_img/Group.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  
-}
-
 .with-icon {
+  background-image: url(/img/footer_img/Group.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+  background-color: #16C8BB;
+  border: none;
   width: 64px;
   height: 48px;
-  border: none;
   cursor: pointer;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transition: background-color 0.3s ease;
+}
 
+.with-icon:hover {
+  background-color: #3abcf2;
 }
 
 
