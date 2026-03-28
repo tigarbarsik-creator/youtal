@@ -634,10 +634,32 @@ grid-column: span 2;
 .submit-btn:hover {
   background-color: #3abcf2;
 }
+
 .with-icon::before {
-content: url(/img/footer_img/Group.png);
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url(/img/footer_img/Group.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+
+.with-icon {
+  width: 64px;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
+
+
+
 
 
 .privacy-notice {
