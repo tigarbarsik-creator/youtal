@@ -386,7 +386,7 @@ background-position: center 386px;
 .one 
   {
   width: 100%;
-   background-image: url('../img2/Rectangle (10).png');  
+   background-image: url('../img2/Rectangle (10).png')!important;  
   background-size: cover;
   background-position: bottom;
   position: relative;
