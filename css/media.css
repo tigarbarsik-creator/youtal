@@ -162,7 +162,6 @@ grid-column: span 2;
 
 }
 
-/* До 768 px */
 @media (max-width: 768px) {
   .header__container {
     
@@ -200,9 +199,7 @@ padding-bottom: 73px;
     padding-right: 20px;
   }
 
-}
-
-  
+} 
 @media (max-width: 620px) {
   .grid-card .div4, .div5,
   .div6,
@@ -267,26 +264,8 @@ padding:0 20px 0 20px ;}
         gap: 20px;
         justify-content: center;
     }
-    
-
-  
-
-
-
- 
-
-
 }
 
-
-
-  
-
-
-
-
-
-/* До 480 px */
 @media (max-width: 480px) {
   .header__container {
     height: 72px;
@@ -381,8 +360,6 @@ background-position: center 386px;
    height: 206px;
     width: 100%;
   }
-  
-
 .one 
   {
   width: 100%;
@@ -396,10 +373,6 @@ background-position: center 386px;
 }
  
   }
-
- 
-
-/* До 375 px */
 @media (max-width: 375px){
   main {
 padding:0 16px 0 16px ;}
@@ -416,14 +389,8 @@ padding:0 16px 0 16px ;}
   .with-icon::before {
     display: none; 
   }
-
-
-
   .email-input {
     width: 100%; 
     
   }
- 
-  
-
 }
