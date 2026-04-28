@@ -9,3 +9,8 @@
   src: url(../font/ofont.ru_Montserrat.ttf);
   font-weight: 600;
 }
+@font-face {
+  font-family: "Montserrat-Regular.ttf";
+  src: url(../font/Montserrat-Regular.ttf);
+   font-weight: 600;
+}

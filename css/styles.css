@@ -3,9 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Montserrat', sans-serif;
+}
+.body {
  background-image: url("data:image/svg+xml,%3Csvg width='1440' height='672' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1440' height='672' fill='%23EFF5FB' /%3E%3ClinearGradient id='fadeGradient' x1='0%' y1='0%' x2='0%' y2='100%'%3E%3Cstop offset='41.95%' stop-color='rgba(255, 255, 255, 0)' /%3E%3Cstop offset='70.27%' stop-color='%23FFFFFF' /%3E%3C/linearGradient%3E%3Crect width='1440' height='672' fill='url(%23fadeGradient)' /%3E%3C/svg%3E");
 background-size: 1440px ;
 background-repeat: no-repeat;
@@ -85,7 +86,7 @@ background-position: center 468px;
 
 .navigation__link {
   text-decoration: none;
-  font-family: "Montserrat-Medium";
+   font-family: "Montserrat-Medium",sans-serif;/* font-family: "Montserrat"; */
   font-weight: 400;
   color: #333333;
   transition: color 0.3s ease;
@@ -750,3 +751,317 @@ grid-column: span 2;
 
 
  
+
+
+.author-info {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #494949;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    padding-top: 16px; /* Небольшой отступ сверху для компенсации */
+}
+
+.self-label {
+    display: inline-block;
+    width: 26px;
+    height: 20px;
+    transform: rotate(0deg);
+    opacity: 1;
+    color: #2963A3;
+    line-height: 20px;
+    border-radius: 3px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+
+.toc {
+  width: 600px;
+  font-family:sans-serif;
+  line-height: 1.6;
+}
+
+.toc h2 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.toc > ul > li {
+  list-style-type: none;
+  position: relative;
+  margin-left: 36px;
+}
+
+.toc > ul > li::before {
+  content: '•';
+  color: #03B2A5; /* <-- Меняйте цвет здесь */
+  font-size: 32px; /* <-- Меняйте размер здесь */
+  line-height: 24px;
+  margin-right: 9px;
+  position: absolute;
+  left: -20px;
+}
+
+.toc > ul > li > a {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-offset: 0;
+  text-decoration-thickness: 1px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  leading-trim: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.sublist a {
+  text-decoration: none;
+  color: #000;
+}
+
+.sublist {
+  list-style-type: none;
+  margin-left: 25px;
+  padding: 0;
+}
+
+.level-1 { margin-left: 25px; }
+.level-2 { margin-left: 50px; }
+.level-3 { margin-left: 75px; }
+
+
+.h2 {
+  padding-bottom: 16px;
+}
+
+.title-h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  leading-trim: none;
+  line-height: 32px;
+  letter-spacing: 0%;
+  padding-bottom: 16px;
+}
+
+.paragraph-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  leading-trim: none;
+  line-height: 24px;
+  letter-spacing: 0px;
+  padding-bottom: 40px;
+}
+
+.quote-container {
+  transform: rotate(0deg);
+  opacity: 1;
+  border-radius: 16px;
+  padding: 24px;
+  background-color: #F3F7FE;
+  box-sizing: border-box;
+}
+
+.quote-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  leading-trim: none;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin: 0 0 16px 0; /* Отступ снизу перед именем автора */
+  color: #222; /* Тёмный текст */
+}
+
+.quote-author {
+ font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  leading-trim: none;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #222;
+  font-style: normal; /* Убираем курсив, если не нужен */
+  
+}
+#myImage {
+  position: absolute;
+  top: 24px; 
+  left: 24px;
+}
+
+.pein {
+  max-width: 800px;
+ 
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+
+
+.list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #555555;
+}
+
+.list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: -10%;
+  color: #4CAF50; /* Зелёный цвет маркера, как на изображении */
+  font-weight: bold;
+  font-size: 32px;
+}
+.title-h3 {
+font-family: "Montserrat", sans-serif;
+font-weight: 700;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 32px;
+letter-spacing: 0%;
+padding-bottom: 24px;
+
+}
+.my-grid {
+  display: grid;
+  grid-template-columns: minmax(300px, 690px) 1fr;
+  gap: 10px;
+  width: 100%;
+}
+
+.col-1 {
+ 
+}
+
+.col-2 {
+  background-color: #e0e0e0;
+}
+
+
+
+
+
+.quote-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 300px; /* Минимальная высота контейнера */
+  padding: 2rem;
+}
+
+.quotee-text {
+  z-index: 10; /* Текст поверх пятна */
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #333;
+  max-width: 80%; /* Ограничиваем ширину текста */
+  margin: 0 auto;
+}
+
+.background-spott {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px; /* Ширина пятна */
+  height: 300px; /* Высота пятна */
+  background-image: url(../img/Vector\ \(1\).png); /* Ваше изображение */
+  background-size: contain; /* Изображение без растягивания */
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8; /* Прозрачность пятна */
+  z-index: 5; /* Под текстом */
+  pointer-events: none; /* Не мешает взаимодействию с текстом */
+}
+
+
+
+
+
+.content-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+  padding-bottom: 24px;
+
+}
+
+.visual-module {
+  flex: 0 0 auto; /* Фиксируем размер, не даём меняться */
+  overflow: hidden; /* Скрываем всё, что выходит за границы блока */
+}
+
+.media-asset {
+width: 100%;
+  height: auto;
+  object-fit: contain; /* Сохраняет пропорции, не растягивает */
+}
+
+.textual-content {
+  flex: 1;
+  padding: 0 15px 15px 15px;
+  box-sizing: border-box; /* Учитывает отступы при расчёте ширины */
+}
+
+.prose-block {
+  line-height: 1.5; /* Межстрочный интервал */
+  color: #333;
+  margin: 0;
+  font-size: 16px;
+  text-align: justify;
+  letter-spacing: 0.1px;
+  max-width: 400px; /* Ограничивает ширину текста для контроля количества строк */
+  overflow-wrap: break-word; /* Переносит длинные слова */
+}
+
+
+.exercise-container {
+    background-color: #FEFAEC;
+    padding: 24px;
+    margin: 24px 24px 24px 0;
+    border-radius: 16px;
+}
+
+.exercise-title {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 24px;
+    font-family: 'Montserrat',sans-serif;
+font-weight: 700;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 24px;
+letter-spacing: 0%;
+
+}
+
+.exercise-description {
+    line-height: 1.6;
+    margin-top: 0;
+    color: #555;
+    font-size: 16px;
+}

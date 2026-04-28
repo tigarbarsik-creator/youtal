@@ -12,6 +12,7 @@
 }
 .header__container {
    max-width: 960px; 
+   padding: 0 0;
 
 }
 .header__logo-container {
