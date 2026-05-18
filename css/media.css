@@ -1,7 +1,12 @@
 
-  
+  @media (max-width: 1200px) {
+  .deca {
+    width: 400px;
+  }
+}
 
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1044px) {
   .navigation {
   display: block;
 }
@@ -39,7 +44,51 @@ padding:0 32px 0 32px ;
 }
 
 }
+@media (max-width: 1024px) {
+  .self-label {
+    display: inline-block; /* Показывается при ширине ≤ 1024 px */
+  }
+   .hide-on-mobile {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  .containerrr {
+  grid-template-columns: 714px 1fr;
+ }
+.block-26 {
+   padding: 23px;
+}
+.gift-images {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  z-index: 10;
+  width: 88px; /* Фиксированная ширина контейнера */
+  height: 106px; /* Фиксированная высота контейнера */
+}
 
+.gift-main {
+  position: absolute;
+  bottom: -18px;
+  right: -20px;
+  width: 100%; /* Занимает 100% ширины родителя */
+  height: auto;
+  z-index: 1;
+}
+
+.gift-overlay {
+  position: absolute;
+  top: 74px; /* Смещение для эффекта наложения */
+  left: 44px; /* Смещение для визуального эффекта */
+  width: 70%; /* 70% от ширины родителя — адаптивно */
+  height: auto;
+  z-index: 99;
+  border-radius: 16px;
+}
+}
 @media (max-width: 1023px) {
   .navigation {
     display: none; 
@@ -68,8 +117,52 @@ padding: 0 32px;
   .social-block {
   align-items: center; 
 }
+.block .block-22,
+.hero-content-block {
+  display: none;
+}
+.deca {
+  display: none;
+}
+.parent-container {
+  display: none;
+}
+.backgro {
+  display: none;
+}
+.nav-container {
+  display: none;
+}
    
  
+}
+@media (max-width: 1012px) {
+  .containerrr {
+    grid-template-columns: auto; 
+  }
+
+  .sidebar {
+    margin-left: 0;
+    max-width: 100%; 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-auto-rows: minmax(80px, auto); 
+    gap: 16px; 
+    padding-bottom: 59px;
+    margin: 0;
+  }
+  .block-23 {
+     max-width: 1000px;
+     margin: 0;
+  }
+.block-24 {
+margin: 0;
+padding: 24px;
+  }
+
+  
+
 }
 
 @media  (max-width:912px) {
@@ -175,7 +268,7 @@ grid-column: span 2;
     font-size: 13px;
     padding: 6px 0;
   }
-  mobile-menu {
+  .mobile-menu {
     top: 72px;
   }
  
@@ -201,7 +294,7 @@ padding-bottom: 73px;
   }
 
 } 
-@media (max-width: 620px) {
+@media (max-width: 640px) {
   .grid-card .div4, .div5,
   .div6,
   .div7,
@@ -265,7 +358,107 @@ padding:0 20px 0 20px ;}
         gap: 20px;
         justify-content: center;
     }
+  .content-layout {
+    flex-direction: column; /* Блоки выстраиваются в колонку */
+    gap: 15px; /* Уменьшаем отступ между блоками */
+  }
+
+  .visual-module,
+  .textual-content {
+    width: 100%; /* Занимаем всю ширину контейнера */
+    max-width: 100%; /* Ограничиваем максимальную ширину */
+    height: 100%;
+    
+  }
+
+  .visual-module {
+    flex: none; /* Отключаем flex‑свойства */
+     
+  }
+
+
+  .prose-block {
+    max-width: none; /* Снимаем ограничение ширины текста */
+  
+  }
+  .textual-content {
+    padding: 0;
+  }
+
+
+    
+    
 }
+/* Глобальная настройка box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Адаптация для экранов ≤ 600 px */
+@media (max-width: 600px) {
+  .containerrr {
+    grid-template-columns: 1fr; 
+    
+    
+  }
+    .sidebar {
+    grid-template-columns: 1fr; 
+  }
+
+  .main-content,
+  .sidebar {
+    width: 100%;
+    max-width: none; 
+    margin-left: 0; 
+  }
+
+  /* Убираем жёсткие ограничения из ключевых блоков */
+  .block-24,
+  .pein,
+  .exercise-container,
+  .quote-container {
+    max-width: none;
+    width: 100%;
+  }
+
+  /* Уменьшаем шрифты для читаемости */
+  .title-h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .paragraph-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+
+
+  /* Кнопки и интерактивные элементы */
+  .buttonn,
+  .action-button-primary {
+    max-width: none;
+    width: 100%;
+    padding: 12px 16px;
+  }
+
+
+
+  
+
+
+  .visual-module,
+  .textual-content {
+    min-width: 0; 
+  }
+  .padding-none {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+
 
 @media (max-width: 480px) {
   .header__container {
