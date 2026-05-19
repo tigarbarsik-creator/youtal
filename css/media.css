@@ -46,7 +46,7 @@ padding:0 32px 0 32px ;
 }
 @media (max-width: 1024px) {
   .self-label {
-    display: inline-block; /* Показывается при ширине ≤ 1024 px */
+    display: inline-block;
   }
    .hide-on-mobile {
     opacity: 0;
@@ -66,24 +66,24 @@ padding:0 32px 0 32px ;
   bottom: 16px;
   right: 16px;
   z-index: 10;
-  width: 88px; /* Фиксированная ширина контейнера */
-  height: 106px; /* Фиксированная высота контейнера */
+  width: 88px; 
+  height: 106px; 
 }
 
 .gift-main {
   position: absolute;
   bottom: -18px;
   right: -20px;
-  width: 100%; /* Занимает 100% ширины родителя */
+  width: 100%;
   height: auto;
   z-index: 1;
 }
 
 .gift-overlay {
   position: absolute;
-  top: 74px; /* Смещение для эффекта наложения */
-  left: 44px; /* Смещение для визуального эффекта */
-  width: 70%; /* 70% от ширины родителя — адаптивно */
+  top: 74px; 
+  left: 44px; 
+  width: 70%; 
   height: auto;
   z-index: 99;
   border-radius: 16px;
@@ -294,6 +294,8 @@ padding-bottom: 73px;
   }
 
 } 
+
+
 @media (max-width: 640px) {
   .grid-card .div4, .div5,
   .div6,
@@ -302,7 +304,7 @@ padding-bottom: 73px;
     display: none;
   }
   .div1 {
-  grid-column: 1 / 7; /* с 1‑й по 7‑ю линию (т. е. 6 колонок) */
+  grid-column: 1 / 7; 
 }
 .div1 { grid-row: 1; grid-column: 1 / 7; }
 .div2 { grid-row: 2; grid-column: 1 / 7; }
@@ -359,26 +361,26 @@ padding:0 20px 0 20px ;}
         justify-content: center;
     }
   .content-layout {
-    flex-direction: column; /* Блоки выстраиваются в колонку */
-    gap: 15px; /* Уменьшаем отступ между блоками */
+    flex-direction: column; 
+    gap: 15px; 
   }
 
   .visual-module,
   .textual-content {
-    width: 100%; /* Занимаем всю ширину контейнера */
-    max-width: 100%; /* Ограничиваем максимальную ширину */
+    width: 100%;
+    max-width: 100%; 
     height: 100%;
     
   }
 
   .visual-module {
-    flex: none; /* Отключаем flex‑свойства */
+    flex: none; 
      
   }
 
 
   .prose-block {
-    max-width: none; /* Снимаем ограничение ширины текста */
+    max-width: none; 
   
   }
   .textual-content {
@@ -389,12 +391,12 @@ padding:0 20px 0 20px ;}
     
     
 }
-/* Глобальная настройка box-sizing */
+
 * {
   box-sizing: border-box;
 }
 
-/* Адаптация для экранов ≤ 600 px */
+
 @media (max-width: 600px) {
   .containerrr {
     grid-template-columns: 1fr; 
@@ -412,7 +414,7 @@ padding:0 20px 0 20px ;}
     margin-left: 0; 
   }
 
-  /* Убираем жёсткие ограничения из ключевых блоков */
+
   .block-24,
   .pein,
   .exercise-container,
@@ -421,7 +423,7 @@ padding:0 20px 0 20px ;}
     width: 100%;
   }
 
-  /* Уменьшаем шрифты для читаемости */
+ 
   .title-h2 {
     font-size: 20px;
     line-height: 28px;
@@ -434,7 +436,7 @@ padding:0 20px 0 20px ;}
 
 
 
-  /* Кнопки и интерактивные элементы */
+
   .buttonn,
   .action-button-primary {
     max-width: none;

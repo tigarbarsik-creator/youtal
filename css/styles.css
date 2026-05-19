@@ -86,7 +86,7 @@ background-position: center 468px;
 
 .navigation__link {
   text-decoration: none;
-  font-family: "Montserrat-Medium",sans-serif;/* font-family: "Montserrat"; */
+  font-family: "Montserrat-Medium",sans-serif;
   font-weight: 400;
   color: #333333;
   transition: color 0.3s ease;
@@ -234,31 +234,33 @@ background-position: center 468px;
   border-top: 1px solid #EFF2F2;
 }
  .breadcrumb {
-  display: flex;
-  margin-top: 16px;
-  margin-bottom: 30px;
-  align-items: center;
-  font-size: 18px;
-  
-  overflow: hidden; 
-  text-overflow: ellipsis; 
-  white-space: nowrap; /
-}
-
-.breadcrumb img {
-  padding-left: 4px;
-  padding-right: 8px;
+display: flex;
+  box-sizing: border-box;
+font-weight: 400;
+margin-top: 16px;
+margin-bottom: 30px;
+align-items: center;
+font-size: 18px;
+} .breadcrumb img {
+padding-left: 4px;
+padding-right: 8px;
 }
 .breadcrumb-item {
-  text-decoration: none;
-  color: #333333B2;
+
+text-decoration: none;
+color: #333333B2;
 }
 .breadcrumb-item:hover {
-  text-decoration: underline;
+text-decoration: underline;
+} .current {
+    display: inline-block; 
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 8px;
+
 }
-.current {
-  font-weight: 400;
-}
+
 h1 {
   margin: 0 auto;
   padding-left: 0;
@@ -760,8 +762,8 @@ grid-column: span 2;
 
 .containerrr {
   display: grid;
-  grid-template-columns: 690px 1fr; /* 690px для основного контента, остальное — сайдбар */
-  gap: 20px; /* Отступ между колонками */
+  grid-template-columns: 690px 1fr;
+  gap: 20px;
   max-width: 1200px;
 
 }
@@ -826,8 +828,8 @@ width: 100%;
 
 .toc > ul > li::before {
   content: '•';
-  color: #03B2A5; /* <-- Меняйте цвет здесь */
-  font-size: 32px; /* <-- Меняйте размер здесь */
+  color: #03B2A5; 
+  font-size: 32px; 
   line-height: 24px;
   margin-right: 9px;
   position: absolute;
@@ -906,10 +908,9 @@ width: 100%;
   leading-trim: none;
   line-height: 24px;
   letter-spacing: 0%;
-  margin: 0 0 16px 0; /* Отступ снизу перед именем автора */
-  color: #222; /* Тёмный текст */
+  margin: 0 0 16px 0; 
+  color: #222; 
 }
-
 .quote-author {
  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -918,7 +919,7 @@ width: 100%;
   line-height: 24px;
   letter-spacing: 0%;
   color: #222;
-  font-style: normal; /* Убираем курсив, если не нужен */
+  font-style: normal;
   
 }
 #myImage {
@@ -954,7 +955,7 @@ width: 100%;
   position: absolute;
   left: 0;
   top: -5px;
-  color: #4CAF50; /* Зелёный цвет маркера, как на изображении */
+  color: #4CAF50; 
   font-weight: bold;
   font-size: 32px;
    line-height: 1;
@@ -968,32 +969,7 @@ line-height: 32px;
 letter-spacing: 0%;
 padding-bottom: 24px;
 padding-top: 24px;
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
 
 .quote-wrapper {
   position: relative;
@@ -1001,12 +977,12 @@ padding-top: 24px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 300px; /* Минимальная высота контейнера */
+  min-height: 300px; 
   padding: 2rem;
 }
 
 .quotee-text {
-  z-index: 10; /* Текст поверх пятна */
+  z-index: 10;
   position: relative;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -1014,7 +990,7 @@ padding-top: 24px;
   line-height: 24px;
   letter-spacing: 0%;
   color: #333;
-  max-width: 80%; /* Ограничиваем ширину текста */
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -1023,15 +999,15 @@ padding-top: 24px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px; /* Ширина пятна */
-  height: 300px; /* Высота пятна */
-  background-image: url(../img/Vector\ \(1\).png); /* Ваше изображение */
-  background-size: contain; /* Изображение без растягивания */
+  width: 300px; 
+  height: 300px; 
+  background-image: url(../img/Vector\ \(1\).png); 
+  background-size: contain; 
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.8; /* Прозрачность пятна */
-  z-index: 5; /* Под текстом */
-  pointer-events: none; /* Не мешает взаимодействию с текстом */
+  opacity: 0.8; 
+  z-index: 5; 
+  pointer-events: none; 
 }
 
 
@@ -1048,8 +1024,8 @@ padding-top: 24px;
 }
 
 .visual-module {
-  flex: 0 0 auto; /* Фиксируем размер, не даём меняться */
-  overflow: hidden; /* Скрываем всё, что выходит за границы блока */
+  flex: 0 0 auto; 
+  overflow: hidden; 
 }
 
 .media-asset {
@@ -1062,7 +1038,7 @@ width: 100%;
 .textual-content {
   flex: 1;
   padding: 0 15px 15px 15px;
-  box-sizing: border-box; /* Учитывает отступы при расчёте ширины */
+  box-sizing: border-box; 
 }
 
 .prose-block {
@@ -1144,14 +1120,14 @@ letter-spacing: 0%;
 }
 
 .pic-wrapper {
-  text-align: center; /* Центрирует изображение по горизонтали */
-  padding-top: 24px; /* Отступ сверху — 24px */
-  padding-bottom: 24px; /* Отступ снизу — 24px */
+  text-align: center;
+  padding-top: 24px; 
+  padding-bottom: 24px; 
 }
 
 .pic-wrapper img {
-  display: block; /* Делает изображение блочным элементом */
-  margin: 0 auto; /* Центрирует изображение по горизонтали */
+  display: block; 
+  margin: 0 auto; 
 }
 
 .costt {
@@ -1160,13 +1136,13 @@ letter-spacing: 0%;
 
 
 .nav-container {
-  font-family: 'Montserrat', sans-serif; /* Шрифт из вашего запроса */
-  font-weight: 400; /* Нормальная жирность */
-  font-size: 14px; /* Размер шрифта */
-  line-height: 20px; /* Межстрочный интервал */
-  letter-spacing: 0; /* Межбуквенное расстояние */
-  margin: 0; /* Убираем отступы по умолчанию */
-  padding: 0; /* Убираем внутренние отступы */
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 400; 
+  font-size: 14px; 
+  line-height: 20px; 
+  letter-spacing: 0; 
+  margin: 0; 
+  padding: 0; 
   padding-bottom: 48px;
   border-bottom: 2px solid #ccc; 
   max-width: 690px;
@@ -1174,23 +1150,23 @@ letter-spacing: 0%;
 }
 
 .nav-row {
-  display: flex; /* Располагаем элементы в строку */
-  gap: 4px; /* Расстояние между элементами (как на изображении) */
-  margin-bottom: 8px; /* Отступ между строками (создаёт перенос) */
-  justify-content: flex-start; /* Элементы прижаты к левому краю */
+  display: flex; 
+  gap: 4px; 
+  margin-bottom: 8px; 
+  justify-content: flex-start; 
 }
 
 .nav-item {
   color: #2963A3;
 
-  padding: 0 4px; /* Внутренние отступы для текста */
-  white-space: nowrap; /* Запрещаем перенос текста внутри элемента */
+  padding: 0 4px; 
+  white-space: nowrap; 
 }
 
 .nav-item:not(:last-child)::after {
-  content: ' · '; /* Добавляем точку-разделитель с пробелами */
-  color: #2963A3; /* Светло-серый цвет точки (как на изображении) */
-  white-space: nowrap; /* Точка не должна переноситься */
+  content: ' · '; 
+  color: #2963A3; 
+  white-space: nowrap; 
 }
 
 .water{
@@ -1200,43 +1176,43 @@ letter-spacing: 0%;
 }
 
 
-/* Основной блок с контентом */
+
 .main-block {
   padding: 72px 0 158px;
-  font-family: 'Arial', sans-serif; /* Шрифт */
-  max-width: 600px; /* Ограничиваем ширину блока */
+  font-family: 'Arial', sans-serif; 
+  max-width: 600px; 
   margin: 0;
   
 }
 
-/* Стили для заголовка */
+
 .main-block h1 {
-  font-size: 48px; /* Крупный размер */
-  font-weight: bold; /* Жирный шрифт */
-  color: #333; /* Тёмно-серый цвет */
-  margin-bottom: 30px; /* Отступ до следующего блока */
+  font-size: 48px; 
+  font-weight: bold; 
+  color: #333; 
+  margin-bottom: 30px;
 }
 
-/* Стили для поясняющего текста */
+
 .main-block p {
   font-size: 16px;
-  color: #666; /* Светло-серый цвет */
-  line-height: 1.6; /* Межстрочный интервал для читаемости */
-  margin-bottom: 40px; /* Отступ до кнопки */
+  color: #666; 
+  line-height: 1.6; 
+  margin-bottom: 40px; 
 }
 
-/* Стили для кнопки (класс btn-primary) */
+
 .btn-primary {
-  background-color: #00b894; /* Бирюзовый цвет */
-  color: white; /* Белый текст */
-  border: none; /* Убираем рамку */
-  padding: 18px 35px; /* Внутренние отступы */
-  border-radius: 8px; /* Закругление углов */
+  background-color: #00b894; 
+  color: white; 
+  border: none; 
+  padding: 18px 35px; 
+  border-radius: 8px; 
   font-size: 18px;
   font-weight: bold;
-  cursor: pointer; /* Курсор-рука при наведении */
+  cursor: pointer; 
   display: inline-block;
-  text-decoration: none; /* Убираем подчёркивание */
+  text-decoration: none; 
 }
 
 
@@ -1281,19 +1257,6 @@ letter-spacing: 0%;
   cursor: pointer; 
   transition: background-color 0.3s ease; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .illustration {
    width: 100%; 
@@ -1379,9 +1342,9 @@ leading-trim: NONE;
 line-height: 24px;
 letter-spacing: 0%;
 padding-bottom: 8px;
-
-
 }
+
+
  
 .custom-list {
   font-family: "Montserrat";
@@ -1391,15 +1354,15 @@ leading-trim: NONE;
 line-height: 20px;
 letter-spacing: 0px;
 gap: 8px;
-  list-style: none; /* Убираем стандартные маркеры */
-  padding-left: 0; /* Убираем отступ слева у списка */
+  list-style: none; 
+  padding-left: 0; 
   padding-bottom: 24px;
 
 
 }
 .card-infoo {
-  margin-bottom: 16px; /* Отступ снизу от текста */
-  padding-bottom: 16px; /* Отступ между текстом и линией */
+  margin-bottom: 16px; 
+  padding-bottom: 16px; 
   border-bottom: 2px solid #ccc; 
   max-width: 250px;
   width: 100%;
@@ -1407,22 +1370,22 @@ gap: 8px;
 
 
 .custom-list li {
-  position: relative; /* Создаём контейнер для кастомного маркера */
-  margin-bottom: 8px; /* Отступ между пунктами списка */
-  padding-left: 16px; /* Отступ текста от маркера */
-  line-height: 1.6; /* Межстрочный интервал для читаемости */
+  position: relative; 
+  margin-bottom: 8px; 
+  padding-left: 16px; 
+  line-height: 1.6; 
   text-align: left;
 }
 
 .custom-list li::before {
-  content: ''; /* Создаём пустой элемент для маркера */
-  position: absolute; /* Фиксируем положение относительно li */
-  left: 0; /* Прижимаем к левому краю */
-  top: 6px; /* Сдвигаем по вертикали */
-  width: 8px; /* Ширина маркера */
-  height: 8px; /* Высота маркера */
-  background-color: #03B2A5; /* Цвет маркера */
-  border-radius: 50%; /* Делаем маркер круглым (если нужно) */
+  content: ''; 
+  position: absolute;
+  left: 0; 
+  top: 6px; 
+  width: 8px;
+  height: 8px; 
+  background-color: #03B2A5; 
+  border-radius: 50%; 
   opacity: 1; 
   transform: rotate(0deg); 
   
@@ -1446,19 +1409,24 @@ gap: 8px;
 }
 .block-24 {
 margin-top: 24px;
+position: relative;
+}
+.position-top-left-16 {
+  position: absolute;
+  top: 16px;
+  left: 16px;
 }
 
 
-
 .block-25 {
-  max-width: 100%; /* Не шире родителя */
+  max-width: 100%; 
    margin-top: 24px;
 }
 
 .block-25 img {
   width: 100%;
   height: auto;
-  max-width: 100%; /* Не выходит за границы родителя */
+  max-width: 100%; 
   display: block;
 }
 
